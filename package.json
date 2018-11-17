@@ -1,0 +1,36 @@
+{
+  "name": "angularjs-gulp-starter",
+  "version": "0.0.1",
+  "description": "angularjs gulp starter",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngmikeng/angularjs-gulp-starter.git"
+  },
+  "keywords": [
+    "angularjs"
+  ],
+  "author": "Minh Nguyen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ngmikeng/angularjs-gulp-starter/issues"
+  },
+  "homepage": "https://github.com/ngmikeng/angularjs-gulp-starter#readme",
+  "dependencies": {
+    "angular": "^1.7.2",
+    "angular-ui-router": "^1.0.18"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.24.5",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.6.1",
+    "gulp-inject": "^5.0.0",
+    "gulp-inject-string": "^1.1.1",
+    "run-sequence": "^2.2.1"
+  }
+}
