@@ -6,11 +6,12 @@ const inject = require('gulp-inject');
 const injectString = require('gulp-inject-string');
 const connect = require('gulp-connect');
 
-const scripts = require('./scripts');
-const vendorScripts = require('./vendor-scripts');
-const styles = require('./styles');
-const templates = require('./templates');
-const package = require('./package');
+const buildConfig = require('./build.config.json');
+const scripts = buildConfig.sources;
+const vendorScripts = buildConfig.vendors;
+const styles = buildConfig.styles;
+const templates = buildConfig.templates;
+const package = require('./package.json');
 const buildDir = './dist/';
 const profile = 'dist';
 
