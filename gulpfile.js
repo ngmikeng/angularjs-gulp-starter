@@ -72,20 +72,15 @@ gulp.task('copy-index', function () {
 
 gulp.task('index', function () {
     var vendorScriptPaths = [];
-    var vendorFiles = [
-        'vendor/**/angular.js',
-        'vendor/**/angular-ui-router.js',
-    ];
-    for (var i = 0; i < vendorFiles.length; i++) {
-        vendorScriptPaths.push(profile + '/' + vendorFiles[i]);
-    }
-
-    var scriptPaths = vendorScriptPaths.concat([
-        profile + '/**/*.module.js',
-        profile + '/**/*.js',
-        profile + '/app/**/*.js'
-    ]);
-
+    var sourceScriptPaths = [];
+    vendorScriptPaths = vendorScripts.map(function (path) {
+        var array = path.split('/');
+        return profile + '/vendor/**/' + array[array.length - 1];
+    });
+    sourceScriptPaths = scripts.map(function(path) {
+        return path.replace('src', profile);
+    });
+    var scriptPaths = vendorScriptPaths.concat(sourceScriptPaths);
     var sources = gulp.src(scriptPaths, { read: false });
 
     return gulp.src(profile + '/index.html')

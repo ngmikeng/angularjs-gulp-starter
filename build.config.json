@@ -5,10 +5,13 @@
     "./src/**/*.js"
   ],
   "vendors": [
+    "./bower_components/jquery/dist/jquery.js",
+    "./bower_components/bootstrap/dist/js/bootstrap.js",
     "./node_modules/angular/angular.js",
     "./node_modules/angular-ui-router/release/angular-ui-router.js"
   ],
   "styles": [
+    "./bower_components/bootstrap/dist/css/bootstrap.css",
     "./src/**/*.css"
   ],
   "templates": [

@@ -4,6 +4,8 @@ build
 
 # dependencies
 node_modules
+bower_components
+vendor
 
 # misc
 npm-debug.log

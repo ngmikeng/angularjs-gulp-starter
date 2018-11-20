@@ -1,0 +1,24 @@
+{
+  "name": "angularjs-gulp-starter",
+  "description": "angularjs gulp starter",
+  "main": "index.js",
+  "authors": [
+    "Minh Nguyen"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "angularjs"
+  ],
+  "homepage": "https://github.com/ngmikeng/angularjs-gulp-starter",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "3.3.7"
+  }
+}
